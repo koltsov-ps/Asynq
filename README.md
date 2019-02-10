@@ -1,9 +1,8 @@
-# asynq
+# Asynq
 
-[![CI Status](https://img.shields.io/travis/Pavel Koltsov/asynq.svg?style=flat)](https://travis-ci.org/Pavel Koltsov/asynq)
-[![Version](https://img.shields.io/cocoapods/v/asynq.svg?style=flat)](https://cocoapods.org/pods/asynq)
-[![License](https://img.shields.io/cocoapods/l/asynq.svg?style=flat)](https://cocoapods.org/pods/asynq)
-[![Platform](https://img.shields.io/cocoapods/p/asynq.svg?style=flat)](https://cocoapods.org/pods/asynq)
+[![Version](https://img.shields.io/cocoapods/v/Asynq.svg?style=flat)](https://cocoapods.org/pods/Asynq)
+[![License](https://img.shields.io/cocoapods/l/Asynq.svg?style=flat)](https://cocoapods.org/pods/Asynq)
+[![Platform](https://img.shields.io/cocoapods/p/Asynq.svg?style=flat)](https://cocoapods.org/pods/Asynq)
 
 ## Example
 
@@ -13,17 +12,17 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-asynq is available through [CocoaPods](https://cocoapods.org). To install
+Asynq is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'asynq'
+pod 'Asynq'
 ```
 
 ## Author
 
-Pavel Koltsov, p.koltsov@tinkoff.ru
+Pavel Koltsov, koltsov.ps@gmail.com
 
 ## License
 
-asynq is available under the MIT license. See the LICENSE file for more info.
+Asynq is available under the MIT license. See the LICENSE file for more info.

@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		526B9B26D57DBC3897E1BC0F /* Pods_asynq_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2848E78125DC410572CA76F /* Pods_asynq_Tests.framework */; };
+		526B9B26D57DBC3897E1BC0F /* Pods_Asynq_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2848E78125DC410572CA76F /* Pods_Asynq_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		B051FD9504BC7A58BC00791B /* Pods_asynq_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9BF1F0CFE2F350807F69DC /* Pods_asynq_Example.framework */; };
+		B051FD9504BC7A58BC00791B /* Pods_Asynq_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9BF1F0CFE2F350807F69DC /* Pods_Asynq_Example.framework */; };
+		B4A95CC7221068FE003A45D5 /* TestFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A95CC3221068FE003A45D5 /* TestFuncs.swift */; };
+		B4A95CC8221068FE003A45D5 /* FailableAsyncTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A95CC4221068FE003A45D5 /* FailableAsyncTransformTests.swift */; };
+		B4A95CC9221068FE003A45D5 /* AsyncTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A95CC5221068FE003A45D5 /* AsyncTransformTests.swift */; };
+		B4A95CCA221068FE003A45D5 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A95CC6221068FE003A45D5 /* TestError.swift */; };
+		B4A95CCD221069B1003A45D5 /* UnreachableFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A95CCB221069A3003A45D5 /* UnreachableFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,30 +27,34 @@
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = asynq;
+			remoteInfo = Asynq;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EAE8554E511F01199DB5A6D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		139F8C618DB4779372EDFE7C /* asynq.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = asynq.podspec; path = ../asynq.podspec; sourceTree = "<group>"; };
-		46401C28057752A120926A1A /* Pods-asynq_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asynq_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-asynq_Tests/Pods-asynq_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* asynq_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asynq_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EAE8554E511F01199DB5A6D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		139F8C618DB4779372EDFE7C /* Asynq.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Asynq.podspec; path = ../Asynq.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46401C28057752A120926A1A /* Pods-Asynq_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asynq_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Asynq_Tests/Pods-Asynq_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* Asynq_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asynq_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* asynq_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = asynq_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* Asynq_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Asynq_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8A9BF1F0CFE2F350807F69DC /* Pods_asynq_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_asynq_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97F6C471FF39E0ED0C086EA0 /* Pods-asynq_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asynq_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-asynq_Example/Pods-asynq_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A711E69CB4314F187895BC5F /* Pods-asynq_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asynq_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-asynq_Tests/Pods-asynq_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C2848E78125DC410572CA76F /* Pods_asynq_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_asynq_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC5F1A5FCB2BA0AF0DF384EF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CF692995A8D5A7840BE45748 /* Pods-asynq_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asynq_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-asynq_Example/Pods-asynq_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8A9BF1F0CFE2F350807F69DC /* Pods_Asynq_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asynq_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F6C471FF39E0ED0C086EA0 /* Pods-Asynq_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asynq_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Asynq_Example/Pods-Asynq_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A711E69CB4314F187895BC5F /* Pods-Asynq_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asynq_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Asynq_Tests/Pods-Asynq_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4A95CC3221068FE003A45D5 /* TestFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFuncs.swift; sourceTree = "<group>"; };
+		B4A95CC4221068FE003A45D5 /* FailableAsyncTransformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailableAsyncTransformTests.swift; sourceTree = "<group>"; };
+		B4A95CC5221068FE003A45D5 /* AsyncTransformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTransformTests.swift; sourceTree = "<group>"; };
+		B4A95CC6221068FE003A45D5 /* TestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		B4A95CCB221069A3003A45D5 /* UnreachableFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnreachableFunc.swift; sourceTree = "<group>"; };
+		C2848E78125DC410572CA76F /* Pods_Asynq_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asynq_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5F1A5FCB2BA0AF0DF384EF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CF692995A8D5A7840BE45748 /* Pods-Asynq_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asynq_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Asynq_Example/Pods-Asynq_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B051FD9504BC7A58BC00791B /* Pods_asynq_Example.framework in Frameworks */,
+				B051FD9504BC7A58BC00791B /* Pods_Asynq_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526B9B26D57DBC3897E1BC0F /* Pods_asynq_Tests.framework in Frameworks */,
+				526B9B26D57DBC3897E1BC0F /* Pods_Asynq_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +80,8 @@
 		4A46CDE38AD511DB9C88A982 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8A9BF1F0CFE2F350807F69DC /* Pods_asynq_Example.framework */,
-				C2848E78125DC410572CA76F /* Pods_asynq_Tests.framework */,
+				8A9BF1F0CFE2F350807F69DC /* Pods_Asynq_Example.framework */,
+				C2848E78125DC410572CA76F /* Pods_Asynq_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for asynq */,
+				607FACD21AFB9204008FA782 /* Example for Asynq */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				96EF9F5F1F619F4BC662E80A /* Pods */,
@@ -93,13 +101,13 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* asynq_Example.app */,
-				607FACE51AFB9204008FA782 /* asynq_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* Asynq_Example.app */,
+				607FACE51AFB9204008FA782 /* Asynq_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for asynq */ = {
+		607FACD21AFB9204008FA782 /* Example for Asynq */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -109,8 +117,8 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for asynq";
-			path = asynq;
+			name = "Example for Asynq";
+			path = Asynq;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
@@ -124,7 +132,11 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				B4A95CCB221069A3003A45D5 /* UnreachableFunc.swift */,
+				B4A95CC5221068FE003A45D5 /* AsyncTransformTests.swift */,
+				B4A95CC4221068FE003A45D5 /* FailableAsyncTransformTests.swift */,
+				B4A95CC6221068FE003A45D5 /* TestError.swift */,
+				B4A95CC3221068FE003A45D5 /* TestFuncs.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -141,7 +153,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				139F8C618DB4779372EDFE7C /* asynq.podspec */,
+				139F8C618DB4779372EDFE7C /* Asynq.podspec */,
 				0EAE8554E511F01199DB5A6D /* README.md */,
 				CC5F1A5FCB2BA0AF0DF384EF /* LICENSE */,
 			);
@@ -151,10 +163,10 @@
 		96EF9F5F1F619F4BC662E80A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CF692995A8D5A7840BE45748 /* Pods-asynq_Example.debug.xcconfig */,
-				97F6C471FF39E0ED0C086EA0 /* Pods-asynq_Example.release.xcconfig */,
-				A711E69CB4314F187895BC5F /* Pods-asynq_Tests.debug.xcconfig */,
-				46401C28057752A120926A1A /* Pods-asynq_Tests.release.xcconfig */,
+				CF692995A8D5A7840BE45748 /* Pods-Asynq_Example.debug.xcconfig */,
+				97F6C471FF39E0ED0C086EA0 /* Pods-Asynq_Example.release.xcconfig */,
+				A711E69CB4314F187895BC5F /* Pods-Asynq_Tests.debug.xcconfig */,
+				46401C28057752A120926A1A /* Pods-Asynq_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -162,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* asynq_Example */ = {
+		607FACCF1AFB9204008FA782 /* Asynq_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "asynq_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Asynq_Example" */;
 			buildPhases = (
 				6F53980E4B906CF74CC74D16 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -176,14 +188,14 @@
 			);
 			dependencies = (
 			);
-			name = asynq_Example;
-			productName = asynq;
-			productReference = 607FACD01AFB9204008FA782 /* asynq_Example.app */;
+			name = Asynq_Example;
+			productName = Asynq;
+			productReference = 607FACD01AFB9204008FA782 /* Asynq_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* asynq_Tests */ = {
+		607FACE41AFB9204008FA782 /* Asynq_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "asynq_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Asynq_Tests" */;
 			buildPhases = (
 				BB592004680364CFE13D44AF /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -195,9 +207,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = asynq_Tests;
+			name = Asynq_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* asynq_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* Asynq_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "asynq" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Asynq" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -234,8 +246,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* asynq_Example */,
-				607FACE41AFB9204008FA782 /* asynq_Tests */,
+				607FACCF1AFB9204008FA782 /* Asynq_Example */,
+				607FACE41AFB9204008FA782 /* Asynq_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,18 +281,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-asynq_Example/Pods-asynq_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/asynq/asynq.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Asynq_Example/Pods-Asynq_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Asynq/Asynq.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/asynq.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Asynq.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-asynq_Example/Pods-asynq_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Asynq_Example/Pods-Asynq_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6F53980E4B906CF74CC74D16 /* [CP] Check Pods Manifest.lock */ = {
@@ -298,7 +310,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-asynq_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Asynq_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -320,7 +332,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-asynq_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Asynq_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -343,7 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				B4A95CCA221068FE003A45D5 /* TestError.swift in Sources */,
+				B4A95CC9221068FE003A45D5 /* AsyncTransformTests.swift in Sources */,
+				B4A95CCD221069B1003A45D5 /* UnreachableFunc.swift in Sources */,
+				B4A95CC8221068FE003A45D5 /* FailableAsyncTransformTests.swift in Sources */,
+				B4A95CC7221068FE003A45D5 /* TestFuncs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +368,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* asynq_Example */;
+			target = 607FACCF1AFB9204008FA782 /* Asynq_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -478,10 +494,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF692995A8D5A7840BE45748 /* Pods-asynq_Example.debug.xcconfig */;
+			baseConfigurationReference = CF692995A8D5A7840BE45748 /* Pods-Asynq_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = asynq/Info.plist;
+				INFOPLIST_FILE = Asynq/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,10 +509,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97F6C471FF39E0ED0C086EA0 /* Pods-asynq_Example.release.xcconfig */;
+			baseConfigurationReference = 97F6C471FF39E0ED0C086EA0 /* Pods-Asynq_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = asynq/Info.plist;
+				INFOPLIST_FILE = Asynq/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -508,7 +524,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A711E69CB4314F187895BC5F /* Pods-asynq_Tests.debug.xcconfig */;
+			baseConfigurationReference = A711E69CB4314F187895BC5F /* Pods-Asynq_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -524,13 +540,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/asynq_Example.app/asynq_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Asynq_Example.app/Asynq_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46401C28057752A120926A1A /* Pods-asynq_Tests.release.xcconfig */;
+			baseConfigurationReference = 46401C28057752A120926A1A /* Pods-Asynq_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -542,14 +558,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/asynq_Example.app/asynq_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Asynq_Example.app/Asynq_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "asynq" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Asynq" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -558,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "asynq_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Asynq_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -567,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "asynq_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Asynq_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  asynq
+//  Asynq
 //
 //  Created by Pavel Koltsov on 02/10/2019.
 //  Copyright (c) 2019 Pavel Koltsov. All rights reserved.
